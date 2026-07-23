@@ -1,0 +1,3 @@
+Model: inceptionv3
+Top-1 Accuracy: 75.00%
+Total Images: 100

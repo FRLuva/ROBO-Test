@@ -1,0 +1,53 @@
+ResNet-50 Sample Predictions
+==================================================
+
+Image Index: 0
+Image Path: data\evaluation_dataset\sports_car\ILSVRC2012_val_00001247.JPEG
+True Label: 817
+Predicted Label: 511
+--------------------------------------------------
+Image Index: 1
+Image Path: data\evaluation_dataset\sports_car\ILSVRC2012_val_00003049.JPEG
+True Label: 817
+Predicted Label: 751
+--------------------------------------------------
+Image Index: 2
+Image Path: data\evaluation_dataset\sports_car\ILSVRC2012_val_00003478.JPEG
+True Label: 817
+Predicted Label: 817
+--------------------------------------------------
+Image Index: 3
+Image Path: data\evaluation_dataset\sports_car\ILSVRC2012_val_00003896.JPEG
+True Label: 817
+Predicted Label: 817
+--------------------------------------------------
+Image Index: 4
+Image Path: data\evaluation_dataset\sports_car\ILSVRC2012_val_00004076.JPEG
+True Label: 817
+Predicted Label: 511
+--------------------------------------------------
+Image Index: 5
+Image Path: data\evaluation_dataset\mountain_bike\ILSVRC2012_val_00001659.JPEG
+True Label: 671
+Predicted Label: 671
+--------------------------------------------------
+Image Index: 6
+Image Path: data\evaluation_dataset\mountain_bike\ILSVRC2012_val_00001661.JPEG
+True Label: 671
+Predicted Label: 671
+--------------------------------------------------
+Image Index: 7
+Image Path: data\evaluation_dataset\mountain_bike\ILSVRC2012_val_00003873.JPEG
+True Label: 671
+Predicted Label: 671
+--------------------------------------------------
+Image Index: 8
+Image Path: data\evaluation_dataset\mountain_bike\ILSVRC2012_val_00004147.JPEG
+True Label: 671
+Predicted Label: 671
+--------------------------------------------------
+Image Index: 9
+Image Path: data\evaluation_dataset\mountain_bike\ILSVRC2012_val_00005303.JPEG
+True Label: 671
+Predicted Label: 671
+--------------------------------------------------
