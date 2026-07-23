@@ -1,0 +1,12 @@
+Weight Perturbation Verification Report
+==================================================
+
+Model: ResNet-50
+Perturbation Percentage: 10%
+
+Expected Modified Weights: 2552947
+Changed Weights: 2552947
+Zeroed Weights: 2552947
+Unchanged Weights: 23004085
+
+Validation Status: PASS

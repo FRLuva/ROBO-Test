@@ -18,3 +18,62 @@ Trainable parameters    : 27,161,264
 Non-trainable parameters: 0
 Input image size        : 299 x 299
 Output classes          : 1000
+
+============================================================
+Weight Perturbation Methodology
+============================================================
+
+Purpose:
+The weight perturbation experiment analyzes the robustness of
+pre-trained neural networks when a percentage of learned weights
+are randomly removed.
+
+Models Tested:
+- ResNet-50
+- InceptionV3
+
+
+Parameter Analysis:
+The model parameters were inspected using PyTorch named_parameters().
+For each model, the following information was collected:
+
+- Parameter names
+- Layer locations
+- Tensor shapes
+- Number of weights per parameter tensor
+- Total number of parameters
+
+
+Perturbation Approach:
+
+1. The original model weights are copied before modification.
+2. Only weight parameters are selected for perturbation.
+3. A percentage of weights are randomly selected.
+4. Selected weight values are replaced with zero.
+5. The modified model is returned for evaluation.
+
+
+Perturbation Levels Tested:
+
+- 5% weight perturbation
+- 10% weight perturbation
+- 15% weight perturbation
+
+
+Validation:
+
+The perturbation process was verified by comparing the original
+and modified models.
+
+Verification checks:
+
+- Number of changed weights matches the expected perturbation size.
+- Modified weights are replaced with zero.
+- Unselected weights remain unchanged.
+- Model architecture remains unchanged.
+
+
+Phase 6 Result:
+
+The weight perturbation pipeline was successfully implemented
+and verified on both ResNet-50 and InceptionV3 models.
