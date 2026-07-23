@@ -1,0 +1,21 @@
+Category,ImageNet Class,Folder ID, Images
+Vehicle,Sports car,817,5
+Vehicle,Mountain bike,671,5
+Vehicle,Airliner,404,5
+Vehicle,Fire engine,555,5
+Vehicle,Speedboat,814,5
+Household,Dining table,532,5
+Household,Table lamp,846,5
+Household,Backpack,414,5
+Household,Studio couch,831,5
+Household,Sliding door,799,5
+Food,Cheeseburger,933,5
+Food,Coffee mug,504,5
+Food,Granny Smith,948,5
+Sports,Soccer ball,805,5
+Sports,Basketball,430,5
+Sports,Volleyball,890,5
+Animal,Golden retriever,207,5
+Animal,Persian cat,283,5
+Animal,Giant panda,388,5
+Animal,Tiger,292,5

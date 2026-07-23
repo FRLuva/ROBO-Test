@@ -1,0 +1,20 @@
+MODEL COMPARISON
+==================================================
+
+Model: ResNet-50
+--------------------------------------------------
+Number of layers        : 151
+Total parameters        : 25,557,032
+Trainable parameters    : 25,557,032
+Non-trainable parameters: 0
+Input image size        : 224 x 224
+Output classes          : 1000
+
+Model: InceptionV3
+--------------------------------------------------
+Number of layers        : 307
+Total parameters        : 27,161,264
+Trainable parameters    : 27,161,264
+Non-trainable parameters: 0
+Input image size        : 299 x 299
+Output classes          : 1000
