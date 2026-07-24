@@ -17,11 +17,16 @@ DEVICE = torch.device(
 )
 
 
-def run_inference(model_name):
+def run_inference(
+        model_name=None,
+        model=None
+):
 
     dataloader = create_dataloader()
 
-    model = load_model(
+    if model is None:
+
+     model = load_model(
         model_name
     )
 

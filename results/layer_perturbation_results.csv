@@ -1,0 +1,19 @@
+Model,Region,Perturbation Percentage,Modified Weights,Accuracy
+ResNet-50,Early,5,216944,50.0
+ResNet-50,Early,10,433888,21.0
+ResNet-50,Early,15,650832,20.0
+ResNet-50,Middle,5,60646,83.0
+ResNet-50,Middle,10,121292,55.00000000000001
+ResNet-50,Middle,15,181939,15.0
+ResNet-50,Final,5,102400,86.0
+ResNet-50,Final,10,204800,82.0
+ResNet-50,Final,15,307200,83.0
+InceptionV3,Early,5,8593,17.0
+InceptionV3,Early,10,17187,24.0
+InceptionV3,Early,15,25780,10.0
+InceptionV3,Middle,5,397977,65.0
+InceptionV3,Middle,10,795955,35.0
+InceptionV3,Middle,15,1193932,5.0
+InceptionV3,Final,5,140800,74.0
+InceptionV3,Final,10,281600,75.0
+InceptionV3,Final,15,422400,74.0

@@ -1,7 +1,7 @@
 import torch
 from torchvision import models
 
-from weight_perturbation import apply_weight_perturbation
+from src.perturbation.weight_perturbation import apply_weight_perturbation
 
 
 def count_zero_weights(model):
