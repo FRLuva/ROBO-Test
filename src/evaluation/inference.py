@@ -20,6 +20,17 @@ from torchvision.models import (
     ResNet50_Weights,
 )
 
+def load_class_names():
+    """
+    Load ImageNet class names.
+    """
+
+    class_file = Path("docs/metadata/imagenet_classes.txt")
+
+    with open(class_file, "r") as f:
+        classes = [line.strip() for line in f]
+
+    return classes
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -28,7 +39,7 @@ def get_preprocessing_transform():
     """
     ImageNet preprocessing pipeline.
     """
-
+    
     return transforms.Compose([
         transforms.Resize(256),
         transforms.CenterCrop(224),
@@ -88,12 +99,23 @@ def predict_image(model, image_path):
         if isinstance(output, tuple):
             output = output[0]
 
-        predicted_class = torch.argmax(
-            output,
-            dim=1
-        ).item()
+        probabilities = torch.nn.functional.softmax(
+             output,
+             dim=1
+        )
 
-    return predicted_class
+        confidence, predicted_class = torch.max(
+             probabilities,
+            dim=1
+        )
+
+        class_names = load_class_names()
+
+        return {
+             "class_index": predicted_class.item(),
+             "class_name": class_names[predicted_class.item()],
+             "confidence": confidence.item()
+        }
 
 
 def main():
@@ -115,9 +137,7 @@ def main():
         images[0]
     )
 
-    print(
-        f"Predicted ImageNet Class Index: {prediction}"
-    )
+    print(prediction)
 
 
 if __name__ == "__main__":
