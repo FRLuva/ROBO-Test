@@ -1,0 +1,22 @@
+ROBO-Test Reproducibility Verification
+======================================
+
+Model: ResNet-50
+Layer Region: Middle
+Layer Keyword: layer2
+Perturbation: 10%
+Random Seed: 42
+
+Experiment 1
+Modified Weights: 121292
+Weight Checksum: -39290.681323342025
+
+Experiment 2
+Modified Weights: 121292
+Weight Checksum: -39290.681323342025
+
+Modified Weight Match: True
+Checksum Match: True
+
+FINAL RESULT: PASS
+The experiment produced identical results under the same configuration and random seed.

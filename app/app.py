@@ -355,7 +355,7 @@ with after_col:
     if after_result is not None:
 
         st.write("**Prediction**")
-        st.success(before_result["class_name"].title())
+        st.success(after_result["class_name"].title())
 
         st.metric(
             "Confidence",
