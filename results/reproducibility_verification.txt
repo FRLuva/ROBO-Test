@@ -1,22 +1,42 @@
+======================================
 ROBO-Test Reproducibility Verification
 ======================================
 
+Experiment Configuration
+--------------------------------------
 Model: ResNet-50
-Layer Region: Middle
-Layer Keyword: layer2
-Perturbation: 10%
-Random Seed: 42
+Layer Region: Early
+Perturbation: 5%
+Seed: 42
+Image: data\evaluation_dataset\golden_retriever\ILSVRC2012_val_00001191.JPEG
 
 Experiment 1
-Modified Weights: 121292
-Weight Checksum: -39290.681323342025
+--------------------------------------
+Before Prediction: golden retriever
+Before Confidence: 0.190787
+After Prediction: golden retriever
+After Confidence: 0.534199
+Modified Weights: 216944
+Checksum: -38900.051162452655
 
 Experiment 2
-Modified Weights: 121292
-Weight Checksum: -39290.681323342025
+--------------------------------------
+Before Prediction: golden retriever
+Before Confidence: 0.190787
+After Prediction: golden retriever
+After Confidence: 0.534199
+Modified Weights: 216944
+Checksum: -38900.051162452655
 
-Modified Weight Match: True
-Checksum Match: True
+Verification Checks
+--------------------------------------
+Before Prediction Match: PASS
+Before Confidence Match: PASS
+After Prediction Match: PASS
+After Confidence Match: PASS
+Modified Weight Count Match: PASS
+Perturbed Model Checksum Match: PASS
 
-FINAL RESULT: PASS
-The experiment produced identical results under the same configuration and random seed.
+======================================
+RESULT: PASS
+======================================
