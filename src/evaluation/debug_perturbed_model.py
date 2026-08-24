@@ -37,10 +37,10 @@ def main():
         "Original ResNet-50"
     )
 
-    perturbed_model, modified_count = apply_weight_perturbation(
-         original_model,
-         int(perturbation.replace("%", "")),
-         seed=42
+    perturbed_model, modified = apply_weight_perturbation(
+        model,
+        5,
+        seed=42
     )
 
     print(f"\nModified weights: {modified}")
