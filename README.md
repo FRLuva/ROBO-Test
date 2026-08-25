@@ -9,7 +9,7 @@ Twenty ImageNet classes were selected for robustness evaluation, with 5 images p
 The selected classes represent different categories including vehicles, household objects, food items, sports objects, and animals. 
 The dataset is used consistently across all experiments to ensure a fair comparison between different pretrained neural network architectures.
 
-# ROBO-Test — User Guide
+# User Guide
 
 ## 1. Project Overview
 
