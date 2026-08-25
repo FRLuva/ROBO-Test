@@ -325,27 +325,6 @@ The dashboard provides a convenient alternative to manually opening the generate
 
 ---
 
-## 13. Recommended Demonstration Workflow
-
-For a complete demonstration, follow this sequence:
-
-1. Show the evaluation dataset.
-2. Explain the ImageNet preprocessing pipeline.
-3. Introduce ResNet-50 and InceptionV3.
-4. Show the baseline accuracy of each model.
-5. Explain the weight perturbation procedure.
-6. Explain the 5%, 10%, and 15% perturbation levels.
-7. Show the accuracy-vs-perturbation analysis.
-8. Show the layer sensitivity analysis.
-9. Show the robustness comparison.
-10. Show the before-and-after prediction visualizations.
-11. Open the CSV result files to inspect the underlying numerical results.
-12. Run the reproducibility test.
-13. Launch the Streamlit dashboard.
-14. Explore the results interactively through the dashboard.
-
----
-
 ## 14. Main Research Question
 
 The project is designed to answer the following question:
